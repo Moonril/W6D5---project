@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    height: 100vh;
+}
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+.selezione {
+    transition: all 0.25s linear 0s;
+}
+
+.selezione:hover {
+    transform: scale(1.2);
+    z-index: 5;
+}
