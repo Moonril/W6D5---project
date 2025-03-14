@@ -12,13 +12,15 @@
             background-color: black;
             height: 100vh;
         }
+        .nav-item a:hover {
+            text-decoration: underline;
+        }
 
     </style>
   </head>
   <body>
 
     <header>
-        <!-- add change color on hover -->
         <nav class="navbar navbar-expand-md bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
@@ -49,10 +51,10 @@
                         <a href="#" class="text-light"><i class="bi bi-search"></i></a>
                     </button>
                     <button class="border-0 bg-transparent mx-1">
-                        <a href="#" class="text-light text-decoration-none">KIDS</i></a>
+                        <a href="#" class="text-light text-decoration-none">KIDS</a>
                     </button>
                     <button class="border-0 bg-transparent mx-1">
-                        <a href="#" class="text-light"><i class="bi bi-bell-fill"></i></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-bell-fill"></i></a>
                     </button>
 
                 </div>
@@ -70,11 +72,12 @@
             </div>
           </nav>
     </header>
-<!-- fix h1 font-size mobile -->
-    <main class="my-3"> <!-- mx-2 mx-md-auto -->
+
+    <main class="my-3 p-1">
+        <!-- titolo -->
         <section class="container">
             <div class="row">
-                <div class="col d-flex justify-content-start p-0">
+                <div class="col-9 d-flex justify-content-start p-0">
                     <h1 class="text-light me-1 mb-auto mb-0">TV Shows</h1>
                     <div class="dropdown my-auto ms-3">
                         <a class="btn btn-secondary dropdown-toggle bg-transparent rounded-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -88,14 +91,14 @@
                       </div>
                 </div>
     
-                <div class="col d-flex justify-content-end">
+                <div class="col-3 d-flex justify-content-end">
                     <button type="button" class="btn btn-outline-light rounded-1 my-auto"><i class="bi bi-list"></i></button>
                     <button type="button" class="btn btn-outline-light rounded-1 my-auto"><i class="bi bi-view-list"></i></button>
                 </div>
 
             </div>
         </section>
-
+<!-- trending -->
         <section class="container my-3">
             <h2 class="text-light fs-4 my-3">Trending</h2>
             <div class="row my-3">
@@ -119,6 +122,7 @@
                 </div>
             </div>
         </section>
+<!-- watch it -->
         <section class="container my-3">
             <h2 class="text-light fs-4 my-3">Watch It Again</h2>
             <div class="row my-3">
@@ -142,6 +146,7 @@
                 </div>
             </div>
         </section>
+        <!-- new release -->
         <section class="container my-3">
             <h2 class="text-light fs-4 my-3">New Releases</h2>
             <div class="row my-3">
